@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./tailwind/tailwind.css -o ./public/css/styles.css",
+    "watch": "onchange 'tailwind.config.js './index.html' './public/**/*.css' -- npm run build",
+    "prod": "NODE_ENV=production postcss ./tailwind/tailwind.css -o ./public/css/styles.css"
+  },
+  "keywords": [],
+  "author": "Robert Ntim",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "autoprefixer": "^10.2.4",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3",
+    "win-node-env": "^0.4.0"
+  }
+}
