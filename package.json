@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss ./tailwind/tailwind.css -o ./public/css/styles.css",
-    "watch": "onchange 'tailwind.config.js './index.html' './public/**/*.css' -- npm run build",
     "prod": "NODE_ENV=production postcss ./tailwind/tailwind.css -o ./public/css/styles.css"
   },
   "keywords": [],
